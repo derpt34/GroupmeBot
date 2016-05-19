@@ -4,6 +4,9 @@ GroupMe chat bot that adds various functions to groupme via /commands.
 
 Supported Features:
 
+**General:**
+- /commands
+
 **Polls:**
 - /start poll option 1, option 2, option 3, ...
 - /vote #
@@ -11,6 +14,14 @@ Supported Features:
 - /results
 
 **Social:**
-- /cool guy
+- /cool face
 
-To get the bot up and running follow the tutorial [here](https://github.com/groupme/bot-tutorial-nodejs). 
+**Trivia:**
+- /start quiz
+- /next question
+- /end quiz
+- /score
+
+*Special note that trivia and polling cannot run at the same time. 
+
+To get the bot up and running follow the tutorial [here](https://github.com/groupme/bot-tutorial-nodejs). With the exception you use this project file instead. 
