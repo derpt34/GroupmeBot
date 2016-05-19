@@ -15,13 +15,11 @@ function pollHandler(command, request) {
             }
             else {
                 botResponse = "Poll already in progress, type /end poll before starting a new one.";
-                postMessage.post(botResponse);
             }
             break;
         case "end":
             pollInProgress = false;
             botResponse = "Current poll has ended. To see results type /results";
-            postMessage.post(botResponse);
             break;
         case "vote":
             if (request.text.match(/^\/vote\s[0-9]$/)) {
@@ -31,12 +29,10 @@ function pollHandler(command, request) {
                 }
                 else {
                     botResponse = "There is currently no poll in progress,type '/start poll option 1, option 2, ...' to start a new one.";
-                    postMessage.post(botResponse);
                 }
             }
             else {
                 botResponse = "Invalid selection. Please vote again.";
-                postMessage.post(botResponse);
             }
             break;
         case "results":
@@ -46,6 +42,9 @@ function pollHandler(command, request) {
             postMessage.post("Poll error occured");
     }
     
+    if (botResponse) {
+        postMessage.post(botResponse);
+    }
 }
 
 function startPoll(text) {

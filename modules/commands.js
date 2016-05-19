@@ -9,7 +9,12 @@ var commandList = [
     "/start poll",
     "/vote",
     "/results",
-    "/end poll"
+    "/end poll",
+    "Trivia:",
+    "/start quiz",
+    "/next question",
+    "/end quiz",
+    "/score"
 ];
 
 function list() {
