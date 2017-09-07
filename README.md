@@ -22,6 +22,4 @@ Supported Features:
 - /end quiz
 - /score
 
-*Special note that trivia and polling cannot run at the same time. 
-
 To get the bot up and running follow the tutorial [here](https://github.com/groupme/bot-tutorial-nodejs). With the exception you use this project file instead. 
